@@ -743,6 +743,7 @@ section {
 /* End */
 
 /* MEDIA QUARIES */
+/* from 992 - 1200px */
 @media screen and (max-width: 1200px) {
 	.header {
 		padding: 2rem;
@@ -752,6 +753,7 @@ section {
 	}
 }
 
+/* from 769 = 991 */
 @media screen and (max-width: 991px) {
 	html {
 		font-size: 55%;
@@ -777,6 +779,7 @@ section {
 	}
 }
 
+/* from 451 - 768 */
 @media screen and (max-width: 768px) {
 	.header #menu-btn {
 		display: inline-block;
@@ -814,6 +817,7 @@ section {
 	}
 }
 
+/* from 0 - 450 */
 @media screen and (max-width: 450px) {
 	html {
 		font-size: 50%;
@@ -823,4 +827,4 @@ section {
 	}
 }
 
-/*# sourceMappingURL=style.css.map */
+/* # sourceMappingURL=style.css.map */
