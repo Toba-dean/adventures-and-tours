@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+
+/* General style */
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -18,6 +20,7 @@ html {
     scroll-padding-top: 5rem;
 }
 
+/* Scrollbar style */
 html::-webkit-scrollbar {
     width: 1rem;
 }
@@ -29,11 +32,13 @@ html::-webkit-scrollbar-track {
 html::-webkit-scrollbar-thumb {
     background: #10221b;
 }
+/* end scrollbar */
 
 section {
-    padding: 5rem 9%;
+  padding: 5rem 9%;
 }
 
+/* Button styles */
 .btn {
     margin-top: 1rem;
     display: inline-block;
@@ -49,6 +54,7 @@ section {
     background: #10221b;
     color: #fff;
 }
+/* End button */
 
 .heading {
     text-align: center;
@@ -56,7 +62,9 @@ section {
     font-size: 4rem;
     color: #10221b;
 }
+/* End General */
 
+/* header styles */
 .header {
     position: fixed;
     top: 0;
@@ -68,10 +76,12 @@ section {
     align-items: center;
 }
 
+/* when active class is toggled i.e when window is scrolld */
 .header.active {
     background: #fff;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
+/* end */
 
 .header .logo {
     margin-right: auto;
@@ -117,7 +127,9 @@ section {
 .header #menu-btn {
     display: none;
 }
+/* end header styles */
 
+/* Search form styles */
 .search-form {
     position: fixed;
     top: 0;
@@ -129,9 +141,11 @@ section {
     align-items: center;
     justify-content: center;
     z-index: 10000;
+    /* Take the form up when not active */
     transform: translateY(-110%);
 }
 
+/* bring the from back to its original position on active */
 .search-form.active {
     transform: translateY(0%);
 }
@@ -150,7 +164,7 @@ section {
 }
 
 .search-form form {
-    width: 70rem;
+    width: 80rem;
     margin: 0 2rem;
     padding-bottom: 2rem;
     border-bottom: 0.2rem solid #fff;
@@ -180,7 +194,9 @@ section {
 .search-form form label:hover {
     color: #219150;
 }
+/* End search form styles */
 
+/* Home styles */
 .home {
     padding: 0;
 }
@@ -227,9 +243,12 @@ section {
     font-size: 3rem;
     color: #10221b;
 }
+/* End home styles */
 
+
+/* Category search */
 .category .box-container {
-    display: -ms-grid;
+    /* display: -ms-grid; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
     gap: 1.5rem;
@@ -258,11 +277,13 @@ section {
     padding: 1rem 0;
     line-height: 2;
 }
+/* End category styles */
 
+/* About styles */
 .about {
     background: #eee;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -295,11 +316,14 @@ section {
     padding: 1rem 0;
     line-height: 2;
 }
+/* End about styles */
 
+/* Shop styles */
 .shop .slide {
     border: 0.2rem solid #10221b;
 }
 
+/* show icons on hover */
 .shop .slide:hover .image .icons {
     transform: translateY(0);
 }
@@ -324,6 +348,7 @@ section {
     left: 0;
     text-align: center;
     z-index: 10;
+    /* take it down 7rem and hide with overflow */
     transform: translateY(7rem);
 }
 
@@ -362,6 +387,7 @@ section {
     font-size: 1.7rem;
     color: #10221b;
 }
+/* End shop styles */
 
 .packages {
     background: #eee;

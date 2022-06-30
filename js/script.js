@@ -36,7 +36,7 @@ window.onload = () =>{
     }
 };
 
-
+// Slider js code, learnt from slider docs
 var swiper = new Swiper(".home-slider", {
     loop:true, 
     grabCursor:true,
@@ -131,3 +131,4 @@ var swiper = new Swiper(".clients-slider", {
         },
     },
 });
+// End slider js code
