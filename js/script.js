@@ -1,25 +1,32 @@
+// get a reference to the header and navbar class
 let navbar = document.querySelector(".header .navbar");
 
+// add class name to the menu
 document.querySelector("#menu-btn").onclick = () => {
 	navbar.classList.add("active");
 };
 
+// remove the active class on menu close
 document.querySelector("#nav-close").onclick = () => {
 	navbar.classList.remove("active");
 };
 
+// get the search div
 let searchForm = document.querySelector(".search-form");
 
+// get the search button and add the active class
 document.querySelector("#search-btn").onclick = () => {
 	searchForm.classList.add("active");
 };
 
+// remove the active class on close button
 document.querySelector("#close-search").onclick = () => {
 	searchForm.classList.remove("active");
 };
 
+// on scroll add the active class on the header div and when scroll === 0 remove the classs
 window.onscroll = () => {
-	navbar.classList.remove("active");
+	// navbar.classList.remove("active");
 
 	if (window.scrollY > 0) {
 		document.querySelector(".header").classList.add("active");
@@ -27,6 +34,7 @@ window.onscroll = () => {
 		document.querySelector(".header").classList.remove("active");
 	}
 };
+
 
 window.onload = () => {
 	if (window.scrollY > 0) {
